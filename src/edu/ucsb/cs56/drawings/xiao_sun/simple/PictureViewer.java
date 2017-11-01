@@ -1,4 +1,4 @@
-package edu.ucsb.cs56.drawings.pconrad.simple;
+package edu.ucsb.cs56.drawings.xiao_sun.simple;
 import javax.swing.JFrame;
 
 /** A viewer class to see a picture I drew with 

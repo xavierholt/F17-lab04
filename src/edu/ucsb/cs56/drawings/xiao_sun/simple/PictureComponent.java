@@ -1,4 +1,4 @@
-package edu.ucsb.cs56.drawings.pconrad.simple;
+package edu.ucsb.cs56.drawings.xiao_sun.simple;
 
 import java.awt.Graphics;
 import java.awt.Graphics2D;
@@ -89,13 +89,20 @@ public class PictureComponent extends JComponent
         g2.draw(snowManMiddleCircle);
 	
         // @@@ ADD CODE HERE TO DRAW THE TOP CIRCLE
-
+	 Circle snowManTopCircle =
+            new Circle
+		    (
+		     snowManCenterBottomX,
+		     snowManCenterBottomY - topRadius- bottomRadius * 2-middleRadius*2,
+             topRadius
+		     );
+		g2.draw(snowManTopCircle);
 
 
         // @@@ FINALLY, SIGN AND LABEL YOUR DRAWING
 	// @@@ 20, 20 are suggested coordinates, but you may change them
 
-        // g2.drawString("Description and your name go here", 20,20);
+        g2.drawString("xiao sun", 20,20);
 	
     }
 }
