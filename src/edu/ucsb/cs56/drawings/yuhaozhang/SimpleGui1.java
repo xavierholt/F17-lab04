@@ -22,7 +22,7 @@ public class SimpleGui1 {
 	
 	JButton button = new JButton("Click to be brilliant!") ;
 	
-	java.awt.Color myColor = new java.awt.Color(204,255,000);   // R, G, B values.
+	java.awt.Color myColor = new java.awt.Color(132,213,123);   // R, G, B
 	button.setBackground(myColor);
 	button.setOpaque(true);
 	
