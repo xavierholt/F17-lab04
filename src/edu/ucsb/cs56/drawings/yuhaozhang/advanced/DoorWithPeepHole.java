@@ -7,8 +7,8 @@ import java.awt.geom.Ellipse2D;
 /**
    A House
       
-   @author Phill Conrad 
-   @version for CS56, W16, UCSB
+   @author Yuhao Zhang 
+   @version for CS56, F17, UCSB
    
 */
 public class DoorWithPeepHole extends Door implements Shape
@@ -18,21 +18,12 @@ public class DoorWithPeepHole extends Door implements Shape
      */
     public DoorWithPeepHole(double x, double y, double width, double height)
     {
-	// construct the basic house shell
+
 	super(x,y,width,height);
 	
-	// get the GeneralPath that we are going to append stuff to
+
 	GeneralPath gp = this.get();
-	
-	// Make three windows, spaced like this, where w=width/10.0;
-	// | +--+ +--+ +--+ |
-	// | |  | |  | |  | |
-	// | +--+ +--+ +--+ |
-	// |w 2w w 2w w w2 w|
-	//
-	// The top of window will be at y + 0.5*height and the
-	// height of the window is 0.25height;
-	
+		
 	double radius = 0.04 * height;  
 
 	Ellipse2D.Double hole = 
@@ -40,9 +31,7 @@ public class DoorWithPeepHole extends Door implements Shape
 	
        
 	
-	// add the windows to the house
-	// Look up the meaning of the second parameter of append
-	// (Hint--is a method of "GeneralPath")
+	// add the peep hole to the door
 	
         GeneralPath wholeDoor = this.get();
         wholeDoor.append(hole, false);   

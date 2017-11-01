@@ -38,14 +38,12 @@ public class Door extends GeneralPathWrapper implements Shape
             new Rectangle2D.Double(x + 0.6 * width , y + upperHandleHeight,
 				   0.35 * width, handleHeight);
 	
-        // make the roof.   Remember that y goes DOWN the page,
-        // so we ADD to y to get a "lower" value on the screen
         Rectangle2D.Double door =
             new Rectangle2D.Double(x, y, width, height);
                                   
 	Ellipse2D.Double circleHandle =
 	    new Ellipse2D.Double(x + 0.8 * width, y + upperHandleHeight, handleHeight, handleHeight);
-        // put the whole house together
+        // put the whole door together
 	
         GeneralPath wholeDoor = this.get();
         wholeDoor.append(handle, false);
